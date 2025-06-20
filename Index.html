@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos de Regularización</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: url('encabezado.jpg') center center / contain no-repeat;
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      position: relative;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .sectionEnc {
+      padding: 10px 20px;
+    }
+
+    .section.bg-ybg {
+      background: linear-gradient(to right, #007bff, #28a745);
+    }
+
+    .sectionEnc.bg-ybg {
+      background: linear-gradient(to right, #007bff, #28a745);
+    }
+
+    .section.bg-yellow {
+      background-color: #ffeb3b;
+    }
+
+    .section.bg-blue {
+      background-color: #e3f2fd;
+    }
+
+    .section.bg-green {
+      background-color: #d0f0c0;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp-button svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-icons svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 10px;
+    }
+
+    header div {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      color: white; text-align: center;
+    }
+  </style>
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top sectionEnc bg-ybg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Acompañamiento y Regularización Academica</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonios">Testimonios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ubicacion">Ubicación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+<header>
+  <div>
+    
+  </div>
+</header>
+<section class="section bg-ybg text-center">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <p>Clases personalizadas, profesores capacitados y metodología efectiva, material de apoyo, evaluaciones periódicas, flexibilidad de horarios, modalidad presencial o en línea. ¡Mejora tus calificaciones con nosotros!</p>
+    </div>
+  </section>
+
+<section class="section bg-yellow text-center" data-aos="fade-up">
+    <div class="container">
+      <h2>Cursos de Regularización</h2>
+      <p>Matemáticas, Física, Química, Estadistica, Razonamiento Verbal</p>
+      <h2>Cursos para ingresar a:</h2>
+      <p>Secundaria, Bachillerato, Universidades</p>
+    </div>
+  </section>
+
+<section class="section bg-blue text-center" id="horarios" data-aos="fade-up">
+  <div class="container">
+    <h2>Horarios</h2>
+    <p>Consulta los horarios disponibles para cada materia.</p>
+    <table class="table table-bordered table-striped mt-4 bg-white">
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes, miercoles, jueves y viernes</td>
+          <td>4:00 PM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Martes, miercoles y jueves</td>
+          <td>10:00 AM - 12:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>10:00 AM - 2:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+  <section class="section bg-green" id="testimonios" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Testimonios</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Gracias a estos cursos subí mis calificaciones en matemáticas. ¡Totalmente recomendados!"</p>
+            <strong>- Ana L.</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Los profesores explican excelente y el trato es muy profesional. Volvería sin duda."</p>
+            <strong>- Carlos M.</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Aprendí más en un mes aquí que en todo un semestre en la escuela."</p>
+            <strong>- Lucía R.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-blue" id="ubicacion" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Ubicación</h2>
+      <p>Estamos ubicados en Av. Educación 123, CDMX</p>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1744481545193!5m2!1ses!2smx!6m8!1m7!1svDF0qDcpdJCEGniG4DaWkg!2m2!1d18.47800697032627!2d-97.4034460901843!3f221.37592727634575!4f4.311197040364007!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-yellow text-center" id="contacto" data-aos="fade-up">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo electrónico" required />
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5531122118" class="whatsapp-button" target="_blank" title="Enviar mensaje por WhatsApp">
+    <svg fill="white" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.12 1.61 5.93L0 24l6.27-1.64A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zM12 22c-1.94 0-3.84-.53-5.49-1.52l-.39-.23-3.73.98.99-3.64-.25-.42A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+  </a>
+
+  
+<style>
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.3);
+    color: #ffc107; /* amarillo para resaltar */
+  }
+
+  .social-icons svg {
+    width: 24px;
+    height: 24px;
+  }
+</style>
+
+<footer class="sectionEnc bg-ybg">
+  <p>Síguenos en nuestras redes sociales</p>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" title="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24
+        1.325 24h11.495v-9.294H9.691V11.01h3.129V8.412c0-3.1
+        1.893-4.788 4.659-4.788 1.325 0 2.464.099
+        2.796.143v3.24h-1.918c-1.504 0-1.796.715-1.796
+        1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.403
+        24 24 23.403 24 22.676V1.325C24 .597 23.403 0
+        22.675 0z"/></svg>
+    </a>
+    <a href="https://instagram.com" target="_blank" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5c0 3.3-2.45
+        5.75-5.75 5.75h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2
+        4.45 4.45 2 7.75 2zM12 7a5 5 0 100 10 5 5 0
+        000-10zm6.25-.75a1.25 1.25 0 110 2.5 1.25 1.25 0
+        010-2.5zM12 9.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5z"/></svg>
+    </a>
+    <a href="https://twitter.com" target="_blank" title="X (Twitter)">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6.01c-.77.35-1.6.59-2.46.7a4.3 4.3 0
+        001.88-2.37 8.6 8.6 0 01-2.72 1.04A4.28 4.28 0
+        0015.5 4c-2.37 0-4.3 1.92-4.3 4.3 0 .34.04.66.11.97-3.58-.18-6.76-1.9-8.88-4.5a4.28
+        4.28 0 00-.58 2.16c0 1.49.76 2.81 1.9 3.57a4.28
+        4.28 0 01-1.94-.54v.05c0 2.09 1.49 3.83 3.46
+        4.23a4.33 4.33 0 01-1.93.07 4.29 4.29 0 004
+        2.96A8.6 8.6 0 012 19.55a12.14 12.14 0 006.57
+        1.93c7.89 0 12.21-6.54 12.21-12.21 0-.19-.01-.37-.02-.56a8.7
+        8.7 0 002.14-2.2z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.67 1c1.01 0 1.9.68 2.12 1.66.19.9.93 1.6 1.84 1.76.24.04.48.06.72.06v2.05c-.87-.01-1.74-.18-2.54-.5v6.34c0 2.96-2.4 5.36-5.36 5.36S4.08 15.27 4.08 12.3c0-2.8 2.14-5.1 4.91-5.35v2.06c-1.61.24-2.73 1.72-2.49 3.34a2.99 2.99 0 003.34 2.49c1.43-.21 2.51-1.44 2.51-2.9V1h.32z"/></svg>
+    </a>
+    <a href="https://www.youtube.com" target="_blank" title="YouTube">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6zm12-3c0-2.5-.5-4.5-1.45-5.44C19.57 6 12 6 12 6s-7.57 0-8.55.56C2.5 7.5 2 9.5 2 12s.5 4.5 1.45 5.44C4.43 18 12 18 12 18s7.57 0 8.55-.56C21.5 16.5 22 14.5 22 12z"/></svg>
+    </a>
+  </div>
+  <p class="mt-3">&copy; 2025 Cursos de Regularización. Todos los derechos reservados.</p>
+</footer>
+
+
+  <script>
+    $(document).ready(function() {
+      $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        let target = this.hash;
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 800);
+      });
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  $(document).ready(function () {
+    $('.navbar-nav a').on('click', function () {
+      if ($('.navbar-toggler').is(':visible')) {
+        $('.navbar-toggler').click();
+      }
+    });
+  });
+</script>
+
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
