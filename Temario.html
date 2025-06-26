@@ -102,6 +102,36 @@
       justify-content: center; align-items: center;
       color: white; text-align: center;
     }
+
+    .accordion-custom .card {
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+    .accordion-custom .card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    .accordion-custom .card-header {
+      background: linear-gradient(to right, #007bff, #28a745);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+    .accordion-custom .card-body {
+      display: none;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .temario-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-bottom: 15px;
+    }
   </style>
 
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -120,154 +150,94 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#testimonios">Testimonios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#ubicacion">Ubicación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
+          <a class="nav-link" href="Index.html">Principal</a>
+        </li>        
       </ul>
     </div>
   </div>
 </nav>
-
-
   
 <header>
   <div>
     
   </div>
 </header>
-<section class="section bg-ybg text-center">
-    <div class="container">
-      <h2>¿Por qué elegirnos?</h2>
-      <p>Clases personalizadas, profesores capacitados y metodología efectiva, material de apoyo, evaluaciones periódicas, flexibilidad de horarios, modalidad presencial o en línea. ¡Mejora tus calificaciones con nosotros!</p>
-    </div>
-    <div class="col-md-12">
-          <div class="testimonial-card">
-            <strong><a class="nav-link" href="Nosotros.html">Conocenos...</a></strong>
-          </div>
-        </div>
-  </section>
 
-<section class="section bg-yellow text-center" data-aos="fade-up">
-  <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <strong>"Cursos de Regularización"</strong>
-            <p>Matemáticas, Física, Química, Estadistica, Razonamiento Verbal</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <strong>Cursos para ingresar a:</strong>
-            <p>Secundaria, Bachillerato, Universidades</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <strong><a class="nav-link" href="Temario.html">Temario</a></strong>
-          </div>
-        </div>
-        
+  <div class="container mt-5">
+  <h1 class="text-center mb-4">Temario de Cursos de Regularización</h1>
+
+  <div class="accordion-custom">
+
+    <!-- Matemáticas -->
+    <div class="card">
+      <div class="card-header">Matemáticas</div>
+      <div class="card-body">
+        <img src="Matematicas.jpg" alt="Matemáticas" class="temario-img">
+        <ul>
+          <li>Aritmética básica</li>
+          <li>Álgebra y ecuaciones</li>
+          <li>Geometría y trigonometría</li>
+          <li>Probabilidad y estadística</li>
+        </ul>
       </div>
+    </div>
+
+    <!-- Física -->
+    <div class="card">
+      <div class="card-header">Física</div>
+      <div class="card-body">
+        <img src="fisica.jpg" alt="Física" class="temario-img">
+        <ul>
+          <li>Cinemática</li>
+          <li>Dinámica y leyes de Newton</li>
+          <li>Trabajo, energía y potencia</li>
+          <li>Electricidad básica</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Química -->
+    <div class="card">
+      <div class="card-header">Química</div>
+      <div class="card-body">
+        <img src="quimica.jpg" alt="Química" class="temario-img">
+        <ul>
+          <li>Átomos, elementos y compuestos</li>
+          <li>Tabla periódica</li>
+          <li>Enlaces químicos</li>
+          <li>Reacciones químicas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Expresión Lectora -->
+    <div class="card">
+      <div class="card-header">Expresión Lectora</div>
+      <div class="card-body">
+        <img src="lectora.jpg" alt="Expresión Lectora" class="temario-img">
+        <ul>
+          <li>Comprensión de textos</li>
+          <li>Identificación de ideas principales</li>
+          <li>Tipos de textos</li>
+          <li>Redacción clara y coherente</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
-</section>
+</div>
 
-<section class="section bg-blue text-center" id="horarios" data-aos="fade-up">
-  <div class="container">
-    <h2>Horarios</h2>
-    <p>Consulta los horarios disponibles para cada materia.</p>
-    <table class="table table-bordered table-striped mt-4 bg-white">
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Horario</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes, miercoles, jueves y viernes</td>
-          <td>4:00 PM - 6:00 PM</td>
-        </tr>
-        <tr>
-          <td>Martes, miercoles y jueves</td>
-          <td>10:00 AM - 12:00 PM</td>
-        </tr>
-        <tr>
-          <td>Sábado</td>
-          <td>10:00 AM - 2:00 PM</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+<script>
+  $(document).ready(function(){
+    $('.card-header').click(function(){
+      let body = $(this).next('.card-body');
+      $('.card-body').not(body).slideUp(); // Cierra otros
+      body.slideToggle(); // Abre/cierra el actual
+    });
+  });
+</script>
 
-
-
-  <section class="section bg-green" id="testimonios" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Testimonios</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"Gracias a estos cursos subí mis calificaciones en matemáticas. ¡Totalmente recomendados!"</p>
-            <strong>- Ana L.</strong>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"Los profesores explican excelente y el trato es muy profesional. Volvería sin duda."</p>
-            <strong>- Carlos M.</strong>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"Aprendí más en un mes aquí que en todo un semestre en la escuela."</p>
-            <strong>- Lucía R.</strong>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <strong><a class="nav-link" href="Comentarios.html">+ Comentarios</a></strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-blue" id="ubicacion" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Ubicación</h2>
-      <p>Estamos ubicados en Av. Educación 123, CDMX</p>
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1744481545193!5m2!1ses!2smx!6m8!1m7!1svDF0qDcpdJCEGniG4DaWkg!2m2!1d18.47800697032627!2d-97.4034460901843!3f221.37592727634575!4f4.311197040364007!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-yellow text-center" id="contacto" data-aos="fade-up">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nombre" required />
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Correo electrónico" required />
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <a href="https://wa.me/2381081430" class="whatsapp-button" target="_blank" title="Enviar mensaje por WhatsApp">
+  <a href="https://wa.me/2383838389" class="whatsapp-button" target="_blank" title="Enviar mensaje por WhatsApp">
     <svg fill="white" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.12 1.61 5.93L0 24l6.27-1.64A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zM12 22c-1.94 0-3.84-.53-5.49-1.52l-.39-.23-3.73.98.99-3.64-.25-.42A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
   </a>
 

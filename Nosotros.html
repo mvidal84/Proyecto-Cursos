@@ -102,6 +102,47 @@
       justify-content: center; align-items: center;
       color: white; text-align: center;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    body {
+       background-color: #f8f9fa;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .fade-in {
+      transition: opacity 1s ease-in-out;
+    }
+
+    @media (max-width: 500px) {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .comentario p {
+        font-size: 15px;
+      }
+    }
   </style>
 
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -120,154 +161,51 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#testimonios">Testimonios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#ubicacion">Ubicación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
+          <a class="nav-link" href="Index.html">Principal</a>
+        </li>        
       </ul>
     </div>
   </div>
 </nav>
-
-
   
 <header>
   <div>
     
   </div>
 </header>
-<section class="section bg-ybg text-center">
-    <div class="container">
-      <h2>¿Por qué elegirnos?</h2>
-      <p>Clases personalizadas, profesores capacitados y metodología efectiva, material de apoyo, evaluaciones periódicas, flexibilidad de horarios, modalidad presencial o en línea. ¡Mejora tus calificaciones con nosotros!</p>
-    </div>
-    <div class="col-md-12">
-          <div class="testimonial-card">
-            <strong><a class="nav-link" href="Nosotros.html">Conocenos...</a></strong>
-          </div>
-        </div>
-  </section>
 
-<section class="section bg-yellow text-center" data-aos="fade-up">
-  <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <strong>"Cursos de Regularización"</strong>
-            <p>Matemáticas, Física, Química, Estadistica, Razonamiento Verbal</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <strong>Cursos para ingresar a:</strong>
-            <p>Secundaria, Bachillerato, Universidades</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <strong><a class="nav-link" href="Temario.html">Temario</a></strong>
-          </div>
-        </div>
-        
+<div class="bg-primary text-white text-center p-5 sectionEnc bg-ybg">
+    <h1 class="mb-3">Conoce a Nuestros Profesores</h1>
+    <p class="lead">Descubre por qué tomar clases con ellos marcará la diferencia en tu aprendizaje.</p>
+</div>
+
+  <section class="container py-5 fade-in">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="P1.jpg" alt="Profesor Luis" class="img-fluid rounded-circle shadow">
       </div>
-  </div>
-</section>
+      <div class="col-md-8">
+        <h2>Profesor Luis Ramírez</h2>
+        <p><strong>Especialidad:</strong> Matemáticas y Física</p>
+        <p><strong>Cualidades:</strong> Didáctico, paciente y apasionado por la enseñanza. Más de 10 años de experiencia en preparatorias y universidades.</p>
+        <p><strong>¿Por qué tomar clases con él?</strong> Sus clases están diseñadas para que comprendas los conceptos más complejos de forma sencilla. Ha ayudado a más de 500 estudiantes a mejorar sus calificaciones.</p>
+      </div>
+    </div>
 
-<section class="section bg-blue text-center" id="horarios" data-aos="fade-up">
-  <div class="container">
-    <h2>Horarios</h2>
-    <p>Consulta los horarios disponibles para cada materia.</p>
-    <table class="table table-bordered table-striped mt-4 bg-white">
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Horario</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes, miercoles, jueves y viernes</td>
-          <td>4:00 PM - 6:00 PM</td>
-        </tr>
-        <tr>
-          <td>Martes, miercoles y jueves</td>
-          <td>10:00 AM - 12:00 PM</td>
-        </tr>
-        <tr>
-          <td>Sábado</td>
-          <td>10:00 AM - 2:00 PM</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-
-
-  <section class="section bg-green" id="testimonios" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Testimonios</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"Gracias a estos cursos subí mis calificaciones en matemáticas. ¡Totalmente recomendados!"</p>
-            <strong>- Ana L.</strong>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"Los profesores explican excelente y el trato es muy profesional. Volvería sin duda."</p>
-            <strong>- Carlos M.</strong>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <p>"Aprendí más en un mes aquí que en todo un semestre en la escuela."</p>
-            <strong>- Lucía R.</strong>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial-card">
-            <strong><a class="nav-link" href="Comentarios.html">+ Comentarios</a></strong>
-          </div>
-        </div>
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-4 text-center">
+        <img src="P2.jpg" alt="Profesora Ana" class="img-fluid rounded-circle shadow">
+      </div>
+      <div class="col-md-8">
+        <h2>Profesora Ana Torres</h2>
+        <p><strong>Especialidad:</strong> Química y Expresión Lectora</p>
+        <p><strong>Cualidades:</strong> Empática, creativa y con enfoque práctico. Experiencia en bachillerato técnico y talleres extracurriculares.</p>
+        <p><strong>¿Por qué tomar clases con ella?</strong> Sus métodos promueven el pensamiento crítico y la comprensión profunda. Tiene una tasa de éxito del 95% entre sus alumnos.</p>
       </div>
     </div>
   </section>
 
-  <section class="section bg-blue" id="ubicacion" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Ubicación</h2>
-      <p>Estamos ubicados en Av. Educación 123, CDMX</p>
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1744481545193!5m2!1ses!2smx!6m8!1m7!1svDF0qDcpdJCEGniG4DaWkg!2m2!1d18.47800697032627!2d-97.4034460901843!3f221.37592727634575!4f4.311197040364007!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-yellow text-center" id="contacto" data-aos="fade-up">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nombre" required />
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Correo electrónico" required />
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <a href="https://wa.me/2381081430" class="whatsapp-button" target="_blank" title="Enviar mensaje por WhatsApp">
+  <a href="https://wa.me/2383838389" class="whatsapp-button" target="_blank" title="Enviar mensaje por WhatsApp">
     <svg fill="white" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.12 1.61 5.93L0 24l6.27-1.64A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zM12 22c-1.94 0-3.84-.53-5.49-1.52l-.39-.23-3.73.98.99-3.64-.25-.42A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
   </a>
 
